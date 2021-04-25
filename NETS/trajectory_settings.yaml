@@ -1,0 +1,6 @@
+name: trajctory_predictor
+folder: saved_models
+train_perc: 0.8
+pred_len: 20
+train_inp:
+   - 10

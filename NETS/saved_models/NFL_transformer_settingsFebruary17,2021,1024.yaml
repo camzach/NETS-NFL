@@ -1,0 +1,10 @@
+hidden_dim: 256
+num_layers: 16
+nhead: 64
+dropout: 0.01
+batch_size: 512
+patience: 30
+num_epochs: 5000
+learning_rate: 0.00005
+n_offense: 6
+n_defense: 11
