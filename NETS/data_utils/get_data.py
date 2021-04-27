@@ -58,7 +58,7 @@ def extract_from_df(df, train, test, val):
 def get_classifier_data(load_path, train=0.8, test=0.1, val=0.1):    
     df = pd.read_pickle(load_path)
     encoder = LabelEncoder()
-    df['label'] = encoder.fit_transform(df['label'].to_numpy().reshape(-1,1))
+    df['label'] = encoder.fit_transform(df['label'].to_numpy().reshape(-1))
 
     events = {event: extract_from_df(df[df.label == event], train, test, val) for event in df.label.unique()}
     n_classes = len(events.keys())
