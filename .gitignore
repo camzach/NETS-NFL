@@ -5,3 +5,4 @@ reports
 tsne plots
 __pycache__
 .vscode
+confusion matrices
